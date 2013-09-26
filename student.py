@@ -11,7 +11,7 @@ class student:
         grade_alpha = {}
         for grade in self.grades.keys():
             if self.grades[grade] > 0 and self.grades[grade] < 50:
-                alpha = "E"
+                alpha = "SDSE"
                 grade_alpha[grade] = alpha
             elif self.grades[grade] > 50 and self.grades[grade] < 60:
                 alpha = "D"
