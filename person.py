@@ -36,7 +36,7 @@ class person:
 
     def get_full_name(self):
         """
-        :return:
+        #:return:
         """
         if self.car.get_car_model() == "Camry" and self.car.get_car_mileage() > 2000:
             return self.fname + " " + self.lname

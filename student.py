@@ -27,3 +27,14 @@ class student:
                 grade_alpha[grade] = alpha
         sorted(grade_alpha, key=grade_alpha.get)
         return grade_alpha
+
+    def GradeSum(self):
+        grade_sum = 0
+
+        for grade in self.grades.keys():
+            grade_sum= grade_sum + self.grades[grade]
+
+        return grade_sum
+
+    def AverageScore(self):
+        return self.GradeSum() / len(self.grades)

@@ -25,3 +25,24 @@ class TestStudent(unittest.TestCase):
         sorted(expected, key=expected.get)
         actual = self.student.getGrades()
         self.assertNotEquals(expected, actual)
+
+    def test_total_grades_not_equal(self):
+        expected = 400
+        actual = self.student.GradeSum()
+        self.assertNotEqual(expected, actual)
+
+    def test_total_grades_equal(self):
+       expected = 381
+       actual = self.student.GradeSum()
+       self.assertEqual(expected, actual)
+
+    def test_get_average_score_not_equal(self):
+        expected = 80
+        actual = self.student.AverageScore()
+        self.assertNotEqual(expected, actual)
+
+    def test_get_average_score_equal(self):
+        expected = 76
+        actual = self.student.AverageScore()
+        self.assertEqual(expected, actual)
+
