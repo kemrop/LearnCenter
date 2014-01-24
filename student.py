@@ -11,7 +11,7 @@ class student:
         grade_alpha = {}
         for grade in self.grades.keys():
             if self.grades[grade] > 0 and self.grades[grade] < 50:
-                alpha = "SDSE"
+                alpha = "E"
                 grade_alpha[grade] = alpha
             elif self.grades[grade] > 50 and self.grades[grade] < 60:
                 alpha = "D"
@@ -37,4 +37,5 @@ class student:
         return grade_sum
 
     def AverageScore(self):
-        return self.GradeSum() / len(self.grades)
+        pass
+       # return self.GradeSum() / len(self.grades)
